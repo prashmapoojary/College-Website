@@ -1,0 +1,104 @@
+/* Feedback Portal - Heritage Navy & Gold Aesthetic */
+
+.feedback-portal {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 32px 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 16px 40px rgba(12, 35, 64, 0.15);
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+.feedback-portal h2 {
+  margin: 0 0 14px;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: #0c2340;
+}
+
+.feedback-subtitle {
+  margin: 0 0 18px;
+  color: #475569;
+  font-size: 15px;
+}
+
+.feedback-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+/* Ensure grid items don't overflow causing overlap */
+.feedback-list > li {
+  min-width: 0;
+}
+
+.feedback-link {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  background: #ffffff;
+  color: #0c2340;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 14px rgba(12, 35, 64, 0.08);
+  box-sizing: border-box;
+}
+
+.feedback-link:hover {
+  transform: translateY(-2px);
+  background: #fefce8;
+  color: #d97706;
+  border-color: #f59e0b;
+  box-shadow: 0 10px 20px rgba(12, 35, 64, 0.15);
+}
+
+.feedback-link:active {
+  transform: translateY(0);
+}
+
+.feedback-link:focus-visible {
+  outline: 2px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+.feedback-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #0c2340;
+  background: linear-gradient(135deg, #fef08a, #f59e0b);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.feedback-item-text {
+  flex: 1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .feedback-portal { padding: 20px 14px; }
+  .feedback-portal h2 { font-size: 22px; }
+  .feedback-subtitle { font-size: 14px; }
+}

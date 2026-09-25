@@ -1,0 +1,290 @@
+/* ===========================
+   General Page Styling
+=========================== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+  background-color:linear-gradient(90deg, #2563eb, #7c3aed); 
+  margin: 0;
+  padding: 0;
+  color: #111112;
+  
+  
+}
+
+.iqac-table{
+  max-width: 1420px;
+  margin: 0.5rem auto;
+}  
+
+.iqac-container{
+  text-align: center;
+  
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.space-y-8 > * + * {
+  margin-top: 2rem;
+}
+
+/* ===========================
+   Header Section
+=========================== */
+.header-gradient {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  color: #fff;
+  padding: 3.5rem;
+  border-radius: 0px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ===========================
+   Section Cards
+=========================== */
+
+/* ===========================
+   Links
+=========================== */
+.section-card a {
+  display: inline-block;
+  color: #2563eb;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: none;
+}
+
+.section-card a:hover {
+  transform: translateY(-2px);  /* small lift */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none; /* remove underline */
+}
+
+.section-card {
+  background-color:linear-gradient(90deg, #2563eb, #7c3aed); 
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.section-card h2 {
+background-color:linear-gradient(90deg, #2563eb, #7c3aed); 
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #7c3aed;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   Links
+=========================== */
+
+/* ===========================
+   Section Cards
+=========================== */
+.section-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.section-card h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2563eb;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.section-card a {
+  display: inline-block;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  color: #fff;
+  text-decoration: none;
+  margin: 0.4rem 0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.section-card a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #7c3aed; /* text color */
+  background: none; /* removes blue background */
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.section-card a:hover {
+  background: #f2f2f2; /* light grey background on hover */
+  color: #000;
+}
+
+.section-card a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+
+
+/* ===========================
+   Committee Table
+=========================== */
+table {
+  background-color:linear-gradient(90deg, #2563eb, #7c3aed); 
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+th {
+    background: linear-gradient(90deg, #2563eb, #7c3aed); 
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  vertical-align: top;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* IQAC Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+th {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  vertical-align: top;
+  transition: background 0.3s ease;
+}
+
+tr:hover td {
+ background-color: #f8faff;
+}
+
+/* First column highlight */
+.iqac-table td:first-child {
+  font-weight: 600;
+  background: #f3f4f6;
+  border-right: 2px solid #d1d5db;
+}
+
+/* Last Row */
+
+/* Hover Effect */
+.iqac-table tr:hover td {
+  background-color: #f5f8ff;
+  transition: 0.3s ease;
+}
+
+
+/* ===========================
+   Vision / Mission / Objectives Cards
+=========================== */
+.vision-card,
+.mission-card,
+.Objectives-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f2fbfb 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #dbeaf0;
+  box-shadow: 0 12px 28px rgba(9, 58, 91, 0.12);
+  transition: all 0.3s ease;
+}
+
+.vision-card:hover,
+.mission-card:hover,
+.Objectives-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(9, 58, 91, 0.2);
+}
+
+.vision-title,
+.mission-title,
+.Objectives-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #7c3aed;
+  text-align: left;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 0.5rem;
+}
+
+.vision-list,
+.mission-list,
+.Objectives-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #0b3556;
+  line-height: 1.6;
+}
+
+/* ===========================
+   Uploads Section
+=========================== */
+.uploads h1 p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.uploads a {
+  margin-left: 0.5rem;
+}

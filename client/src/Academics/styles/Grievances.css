@@ -1,0 +1,145 @@
+/* Grievances Portal - Heritage Navy & Gold Aesthetic */
+
+.grievances-portal {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 32px 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 16px 40px rgba(12, 35, 64, 0.15);
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+.grievances-portal h2 {
+  margin: 0 0 14px;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: #0c2340;
+}
+
+.grievances-subtitle {
+  margin: 0 0 18px;
+  color: #475569;
+  font-size: 15px;
+}
+
+.grievances-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* Ensure grid items don't overflow causing overlap */
+.grievances-list > li {
+  min-width: 0;
+}
+
+.grievances-link {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  background: #ffffff;
+  color: #0c2340;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 14px rgba(12, 35, 64, 0.08);
+  box-sizing: border-box;
+}
+
+.grievances-link:hover {
+  transform: translateY(-2px);
+  background: #fefce8;
+  color: #d97706;
+  border-color: #f59e0b;
+  box-shadow: 0 10px 20px rgba(12, 35, 64, 0.15);
+}
+
+.grievances-link:active {
+  transform: translateY(0);
+}
+
+.grievances-link:focus-visible {
+  outline: 2px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+.grievances-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #0c2340;
+  background: linear-gradient(135deg, #fef08a, #f59e0b);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.grievances-item-text {
+  flex: 1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .grievances-portal { padding: 20px 14px; }
+  .grievances-portal h2 { font-size: 22px; }
+  .grievances-subtitle { font-size: 14px; }
+}
+
+/* Embedded Forms */
+.form-card {
+  margin-top: 24px;
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px rgba(12, 35, 64, 0.08);
+}
+
+.form-title { margin: 0 0 6px; font-size: 20px; font-weight: 800; color: #0c2340; }
+.form-sub { margin: 0 0 12px; color: #64748b; font-size: 14px; }
+.form-msg { margin: 8px 0 12px; color: #15803d; background: #f0fdf4; border: 1px solid #bbf7d0; padding: 10px 14px; border-radius: 8px; font-weight: 600; }
+
+.form-grid { display: flex; flex-direction: column; gap: 14px; }
+.modern-input {
+  padding: 12px 16px;
+  font-size: 15px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  color: #1e293b;
+  transition: all 0.2s ease;
+}
+.modern-input:focus { outline: none; border-color: #f59e0b; box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15); }
+
+.form-actions { text-align: right; margin-top: 8px; }
+.submit-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 24px; border: none; border-radius: 999px; cursor: pointer;
+  font-weight: 700; color: #0c2340;
+  background: linear-gradient(135deg, #fef08a, #f59e0b);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.35);
+  transition: all 0.2s ease;
+}
+.submit-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(245, 158, 11, 0.5); background: linear-gradient(135deg, #f59e0b, #d97706); color: #ffffff; }
+.btn-icon { font-size: 16px; }

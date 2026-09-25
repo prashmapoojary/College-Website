@@ -1,0 +1,143 @@
+.placement-cell {
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background-image: linear-gradient(rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.3)), url('/oldblck.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #1e293b;
+}
+
+.placement-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #0c2340;
+}
+
+.placement-intro,
+.placement-highlights {
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 1.5rem;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 25px rgba(12, 35, 64, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.company-card-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #0c2340;
+}
+
+.company-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* responsive columns */
+  gap: 2rem;
+  justify-items: center;
+  align-items: stretch;
+}
+
+/* Fixed-height media area so all cards reserve the same space for logos */
+.company-media {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 12px 30px rgba(12, 35, 64, 0.15);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 160px;
+  width: 90%; /* let card fill grid cell */
+  max-width: 100%;
+}
+
+.glass-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.company-icon {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin-bottom: 0;
+  object-fit: contain;
+  border-radius: 12px;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.company-icon-placeholder {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: #555;
+}
+
+.glass-card .company-name {
+  margin-top: 0.25rem;
+}
+
+.company-name {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #131111;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive fallback for smaller screens */
+@media (max-width: 768px) {
+  .placement-cell { padding: 1rem; }
+  .glass-card { padding: 1rem; }
+  .company-card-grid { gap: 1rem; }
+  .company-media { height: 150px; }
+}
+
+@media (max-width: 480px) {
+  .placement-cell { padding: 0.75rem; }
+  .placement-header h1 { font-size: 1.8rem; }
+  .glass-card { padding: 0.9rem; }
+  .company-card-grid { gap: 0.8rem; }
+  .company-media { height: 130px; }
+}

@@ -1,0 +1,129 @@
+/* Base Layout */
+.research-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  padding: 2rem 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.research-header {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.research-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.research-header p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Section Wrapper */
+.research-section {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+  padding: 0 2rem;
+}
+
+.research-section h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  color: #333;
+  position: relative;
+}
+
+.research-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+/* Text Content */
+.research-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: left;
+}
+
+.research-text p {
+  margin-bottom: 1.5rem;
+}
+
+/* Objectives List */
+.research-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.research-list li {
+  background: #f8f9fa;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  border-left: 4px solid #764ba2;
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .research-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .research-header p {
+    font-size: 1rem;
+  }
+
+  .research-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .research-header {
+    padding: 2rem 1rem;
+  }
+
+  .research-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .research-header p {
+    font-size: 0.95rem;
+  }
+
+  .research-section {
+    padding: 0 1rem;
+  }
+
+  .research-text {
+    font-size: 0.95rem;
+  }
+
+  .research-list li {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,187 @@
+.ranklist-container {
+  min-height: 100vh;
+  padding: 2.5rem 1rem 4rem;
+  background: linear-gradient(rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.3)), url('/oldblck.jpg') center/cover fixed no-repeat;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ranklist-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, #0c2340 0%, #1e3a8a 60%, #0f172a 100%);
+  color: #fbbf24;
+  border-radius: 16px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.ranklist-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fbbf24;
+}
+
+.home-link {
+  color: #0c2340;
+  text-decoration: none;
+  font-weight: 600;
+  background: #fbbf24;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #d97706;
+  transition: all 0.2s ease;
+}
+
+.home-link:hover {
+  background: #f59e0b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.year-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.year-section {
+  background: transparent;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(12, 35, 64, 0.12);
+}
+
+.year-section.open {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+}
+
+.year-toggle {
+  width: 100%;
+  text-align: left;
+  padding: 1.1rem 1.5rem;
+  border: none;
+  background: #ffffff;
+  color: #0c2340;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.25s ease;
+}
+
+.year-toggle.open {
+  background: linear-gradient(135deg, #0c2340, #1e3a8a);
+  color: #fbbf24;
+  border-radius: 14px 14px 0 0;
+  border-bottom: 2px solid #f59e0b;
+}
+
+.year-label {
+  display: inline-block;
+}
+
+.rank-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: max-height 0.4s ease, padding 0.2s ease;
+}
+
+.rank-cards.open {
+  max-height: 1200px;
+  padding: 1.5rem;
+}
+
+.rank-cards.collapsed {
+  max-height: 0;
+  padding: 0;
+}
+
+.rank-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.8rem;
+  align-items: start;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.85rem;
+  box-shadow: 0 4px 12px rgba(12, 35, 64, 0.06);
+}
+
+.rank-badge {
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 0.65rem;
+  min-width: 2rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #fef08a, #f59e0b);
+  color: #0c2340;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.rank-name {
+  margin: 0 0 0.25rem;
+  color: #0c2340;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.rank-class {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.top-button-container {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+}
+
+.top-button {
+  background: linear-gradient(135deg, #0c2340, #1e3a8a);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(12, 35, 64, 0.35);
+  transition: all 0.2s ease;
+}
+
+.top-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(12, 35, 64, 0.45);
+}
+
+@media (max-width: 600px) {
+  .rank-cards {
+    grid-template-columns: 1fr;
+  }
+}

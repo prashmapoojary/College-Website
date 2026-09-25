@@ -1,0 +1,142 @@
+/* Base Layout */
+.research-page {
+  min-height: 100vh;
+  background: linear-gradient(rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.3)), url('/oldblck.jpg') center/cover fixed no-repeat;
+  padding: 2.5rem 1rem 4rem;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.research-header {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #0c2340 0%, #1e3a8a 60%, #0f172a 100%);
+  color: #fbbf24;
+  margin: 0 auto 3rem;
+  max-width: 1000px;
+  border-radius: 20px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+.research-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.research-header p {
+  font-size: 1.15rem;
+  opacity: 0.95;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Section Wrapper */
+.research-section {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+  padding: 2.5rem 2rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.research-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #0c2340;
+  position: relative;
+}
+
+.research-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(45deg, #f59e0b, #d97706);
+  border-radius: 2px;
+}
+
+/* Text Content */
+.research-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #334155;
+  text-align: left;
+}
+
+.research-text p {
+  margin-bottom: 1.5rem;
+}
+
+/* Objectives List */
+.research-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.research-list li {
+  background: #f8fafc;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  border-left: 4px solid #f59e0b;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .research-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .research-header p {
+    font-size: 1rem;
+  }
+
+  .research-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .research-header {
+    padding: 2rem 1rem;
+  }
+
+  .research-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .research-header p {
+    font-size: 0.95rem;
+  }
+
+  .research-section {
+    padding: 0 1rem;
+  }
+
+  .research-text {
+    font-size: 0.95rem;
+  }
+
+  .research-list li {
+    font-size: 0.95rem;
+  }
+}

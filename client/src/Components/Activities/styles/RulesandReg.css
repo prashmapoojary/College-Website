@@ -1,0 +1,130 @@
+/* Rules and Regulations Page Styles */
+
+.rules-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b2b4b 0%, #0b3d3f 50%, #0a7c75 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0b3556;
+}
+
+.rules-header {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+  color: #eaf7ff;
+}
+
+.rules-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.rules-container {
+  background: rgba(255,255,255,0.96);
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+}
+
+.intro {
+  color: #475569;
+}
+
+.rules-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-top: 1rem;
+}
+
+.rules-td {
+  background: #ffffff;
+  border: 1px solid #dbeaf0;
+  padding: 0.75rem 1rem;
+  vertical-align: top;
+}
+
+.rules-category {
+  width: 220px;
+  font-weight: 700;
+  color: #0a7c75;
+  background: #f2fbfb;
+}
+
+.rules-li {
+  list-style: disc inside;
+  color: #0b3556;
+}
+
+.rules-li.bold {
+  font-weight: 700;
+}
+
+.toggle-button {
+  margin-top: 1.25rem;
+  background: linear-gradient(135deg, #12b4a6, #0a7c75);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(18,180,166,0.35);
+}
+
+.toggle-button:hover {
+  transform: translateY(-2px);
+}
+
+.divider {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #dbeaf0;
+}
+
+.top-link {
+  text-align: right;
+}
+
+.top-anchor {
+  color: #0a7c75;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Code of Ethics Section */
+.code-ethics {
+  margin-top: 1rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f7fffe 100%);
+  border: 1px solid #dbeaf0;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+.college-name {
+  text-align: center;
+  color: #0a7c75;
+  font-weight: 800;
+}
+
+.code-heading {
+  text-align: center;
+  margin: 0.5rem 0 1rem;
+}
+
+.code-subheading {
+  font-weight: 700;
+  color: #07263f;
+  margin-top: 0.75rem;
+}
+
+.code-subheading.center {
+  text-align: center;
+}
+
+.bold-text { font-weight: 700; }
+.small-text { font-size: 0.9rem; color: #475569; }
+.mt-sm { margin-top: 0.5rem; }
+.mt-lg { margin-top: 1.5rem; }

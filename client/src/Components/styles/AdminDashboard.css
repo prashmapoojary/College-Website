@@ -1,0 +1,155 @@
+/* Admin Dashboard styling aligned with Apply theme */
+.admin-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #7d91ea, #b285df);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.admin-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 0.3rem 0;
+}
+
+.admin-header p { color: rgb(90, 90, 123); opacity: 0.95; }
+
+.admin-controls {
+  display: flex;
+  flex-wrap: nowrap; /* keep everything on one line */
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  overflow-x: auto; /* allow horizontal scroll if needed */
+  padding-bottom: 0.25rem; /* space for scroll bar */
+  width: 100%;
+}
+
+/* Make search input grow and avoid cramping controls */
+.admin-controls .modern-input {
+  flex: 1 1 auto; /* allow input to grow/shrink */
+  min-width: 220px;
+}
+
+.admin-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  justify-content: center;
+}
+
+/* subtle scrollbar for overflow */
+.admin-tabs::-webkit-scrollbar { height: 6px; }
+.admin-tabs::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 999px; }
+
+.admin-actions { display: inline-flex; gap: 0.5rem; margin-left: auto; flex-wrap: nowrap; }
+
+.btn {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #e9ecef;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+.btn.small { padding: 0.4rem 0.6rem; font-size: 0.9rem; }
+.btn.export { background: linear-gradient(45deg, #10b981, #059669); color: #fff; }
+.btn.refresh { background: linear-gradient(45deg, #60a5fa, #3b82f6); color: #fff; }
+.btn.danger { background: linear-gradient(45deg, #ef4444, #dc2626); color: #fff; }
+
+.btn:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(0,0,0,0.12); filter: brightness(1.02); }
+.btn:active { transform: translateY(0); box-shadow: 0 4px 10px rgba(0,0,0,0.12); }
+
+/* Tabs */
+.tab {
+  padding: 0.55rem 0.9rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.9);
+  color: #111827;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  font-weight: 700;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  flex: 0 1 auto; /* prevent growing */
+  min-width: 110px;
+  text-align: center;
+}
+.tab.active {
+  background: linear-gradient(45deg, #60a5fa, #3b82f6);
+  color: #fff;
+}
+
+.tab:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15), inset 0 0 0 1px rgba(59,130,246,0.25);
+}
+.tab:not(.active):hover {
+  background: linear-gradient(180deg, rgba(255,255,255,1), rgba(246,248,255,1));
+  border-color: rgba(59,130,246,0.25);
+}
+.tab:active { transform: translateY(0); box-shadow: 0 6px 14px rgba(0,0,0,0.12); }
+.tab:focus-visible { outline: 3px solid rgba(59,130,246,0.45); outline-offset: 2px; }
+
+/* Slight glow when hovering the container */
+.admin-tabs:hover { box-shadow: 0 10px 28px rgba(0,0,0,0.16); }
+
+.admin-card {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.table-wrap { overflow: auto; }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  /* Requested gradient background for tables */
+  background: linear-gradient(135deg, #e4edf6 0%, #8bc3c5 50%, #a0d4d0 100%);
+}
+.table thead th {
+  /* Make header transparent so table gradient shows across the full table */
+  background: transparent;
+  color: #333;
+  font-weight: 700;
+  text-align: left;
+  padding: 12px 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.table tbody td {
+  padding: 12px 14px;
+  border-top: 1px solid #eee;
+  vertical-align: top;
+}
+/* Disable hover effects for table rows as requested */
+.table tbody tr:hover { background: transparent; }
+
+.muted { color: #666; font-size: 0.9rem; }
+
+.empty { text-align: center; color: #666; padding: 1rem; }
+
+/* On small screens, keep in one line with scroll (defaults above handle it) */

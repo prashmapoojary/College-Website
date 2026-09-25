@@ -1,0 +1,210 @@
+/* =========================
+   Container
+========================= */
+.scholarships-container {
+  max-width: 1280px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(12, 35, 64, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  color: #1e293b;
+}
+
+/* =========================
+   Heading
+========================= */
+.scholarships-container h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  color: #0c2340;
+  margin-bottom: 0.5rem;
+}
+
+.scholarships-container p {
+  text-align: center;
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 1.5rem;
+}
+
+/* =========================
+   Dropdown Button
+========================= */
+.dropdown-btn {
+  display: block;
+  margin: 0 auto 1.5rem;
+  padding: 0.85rem 1.75rem;
+  background: linear-gradient(135deg, #0c2340, #1e3a8a);
+  color: #fbbf24;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(12, 35, 64, 0.25);
+  transition: all 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #1e3a8a, #0c2340);
+  box-shadow: 0 8px 25px rgba(12, 35, 64, 0.35);
+}
+
+/* =========================
+   Dropdown Content
+========================= */
+.dropdown-content {
+  overflow-x: auto;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================
+   Scholarships Table
+========================= */
+.scholarships-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  table-layout: fixed; /* equal widths */
+}
+
+.scholarships-table th {
+  background: #0c2340;
+  color: #fbbf24;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 14px 16px;
+  border-bottom: 2px solid #d97706;
+}
+
+.scholarships-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Column widths */
+.scholarships-table th:nth-child(1),
+.scholarships-table td:nth-child(1) {
+  width: 40%; /* Scholarship Name */
+  vertical-align: top;
+}
+
+.scholarships-table th:nth-child(2),
+.scholarships-table td:nth-child(2) {
+  width: 40%; /* Eligibility */
+  vertical-align: top;
+}
+
+.scholarships-table th:nth-child(3),
+.scholarships-table td:nth-child(3) {
+  width: 20%; /* Benefits */
+  vertical-align: top;
+}
+
+/* Row effects */
+.scholarships-table tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.scholarships-table tr:hover {
+  background: #fefce8;
+  transition: background 0.2s;
+}
+
+/* Links */
+.scholarships-table a {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.scholarships-table a:hover {
+  color: #d97706;
+  text-decoration: underline;
+}
+
+/* Lists inside cells */
+.scholarships-table ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.scholarships-table li {
+  margin-bottom: 0.3rem;
+}
+
+/* =========================
+   Awards Table
+========================= */
+.awards-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.awards-table th {
+  background: #0c2340;
+  color: #fbbf24;
+  padding: 12px 16px;
+  border-bottom: 2px solid #d97706;
+  text-align: left;
+}
+
+.awards-table td {
+  border: 1px solid #e2e8f0;
+  padding: 12px 16px;
+  text-align: left;
+  color: #334155;
+}
+
+/* SI.NO small */
+.awards-table th:nth-child(1),
+.awards-table td:nth-child(1) {
+  width: 40px;    /* keep very small */
+  max-width: 40px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.center-top {
+  text-align: center; /* center horizontally */
+  margin: 1.5rem 0;
+}
+
+.top-btn {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  background: linear-gradient(135deg, #0c2340, #1e3a8a);
+  color: #fbbf24;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  transition: all 0.3s ease;
+}
+
+.top-btn:hover {
+  background: linear-gradient(135deg, #1e3a8a, #0c2340);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(12, 35, 64, 0.3);
+}

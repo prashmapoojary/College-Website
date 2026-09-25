@@ -1,0 +1,97 @@
+/* Programme Outcomes - Heritage Navy & Gold Theme */
+
+.outcomes-portal {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 28px 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0c2340 0%, #1e3a8a 55%, #0f172a 100%);
+  color: #f8fafc;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 14px 32px rgba(12, 35, 64, 0.35);
+}
+
+.outcomes-portal h3 {
+  margin: 0 0 14px;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: #fbbf24;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.outcomes-subtitle {
+  margin: 0 0 18px;
+  color: #cbd5e1;
+  font-size: 15px;
+  opacity: 0.95;
+}
+
+.outcomes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+/* Ensure grid items don't overflow */
+.outcomes-list > li { min-width: 0; }
+
+.outcomes-link {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  background: #ffffff;
+  color: #0c2340;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 14px rgba(12, 35, 64, 0.08);
+  box-sizing: border-box;
+}
+
+.outcomes-link:hover {
+  transform: translateY(-2px);
+  background: #fefce8;
+  color: #d97706;
+  border-color: #f59e0b;
+  box-shadow: 0 10px 20px rgba(12, 35, 64, 0.15);
+}
+
+.outcomes-link:active { transform: translateY(0); }
+
+.outcomes-link:focus-visible {
+  outline: 2px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+.outcomes-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #0c2340;
+  background: linear-gradient(135deg, #fef08a, #f59e0b);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.outcomes-item-text { flex: 1; }
+
+@media (max-width: 480px) {
+  .outcomes-portal { padding: 20px 14px; }
+  .outcomes-portal h3 { font-size: 22px; }
+  .outcomes-subtitle { font-size: 14px; }
+}
