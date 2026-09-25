@@ -40,7 +40,7 @@ import AcademicsFeedback from "./Academics/pages/Feedback/Feedback.jsx";
 import AcademicsGrievance from "./Academics/pages/Grievances.jsx";
 
 import Garden from "./Components/Faculty and Campus/User/Garden.jsx";
-import ClubsPage from "./Components/Faculty and Campus/User/CampusCell.jsx";
+import ClubsPage from "./Components/Faculty and Campus/User/Campuscell.jsx";
 import Block from "./Components/Faculty and Campus/User/CampusBlock.jsx";
 import Museum from "./Components/Faculty and Campus/User/Museum.jsx";
 import UserDepartmentList from "./Components/Faculty and Campus/User/DepartmentList.jsx";
